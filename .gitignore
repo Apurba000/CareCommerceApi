@@ -1,0 +1,39 @@
+## .NET build output
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+*.dll
+*.exe
+*.pdb
+
+## JetBrains Rider / IntelliJ
+.idea/
+*.sln.iml
+*.DotSettings.user
+
+## Visual Studio / VS Code
+.vs/
+.vscode/
+*.user
+*.suo
+*.userprefs
+
+## Secrets — never commit these
+appsettings.*.local.json
+*.pfx
+*.key
+.env
+
+## Test + coverage output
+[Tt]est[Rr]esult*/
+coverage*.json
+coverage*.xml
+*.trx
+
+## OS noise
+Thumbs.db
+desktop.ini
+.DS_Store
