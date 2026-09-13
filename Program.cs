@@ -24,7 +24,8 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-if (!app.Environment.IsDevelopment())
+var runningInContainer = app.Configuration.GetValue<bool>("DOTNET_RUNNING_IN_CONTAINER");
+if (!app.Environment.IsDevelopment() && !runningInContainer)
 {
     app.UseHttpsRedirection();
 }

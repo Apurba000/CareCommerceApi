@@ -1,0 +1,34 @@
+# Build output — the critical one
+**/bin/
+**/obj/
+
+# Source control and IDE
+**/.git/
+**/.gitignore
+**/.idea/
+**/.vs/
+**/.vscode/
+**/*.user
+**/*.DotSettings.user
+
+# Docs — changes constantly, would bust the build cache
+docs/
+**/*.md
+**/*.http
+
+# Dev-only config
+**/Properties/launchSettings.json
+
+# Secrets
+**/appsettings.*.local.json
+**/.env
+**/*.pfx
+**/*.key
+
+# Docker's own files
+**/Dockerfile*
+**/.dockerignore
+
+# OS noise
+**/Thumbs.db
+**/desktop.ini
